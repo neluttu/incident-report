@@ -3,16 +3,111 @@ body, html {
     padding:0px;
     width: 100%;
     height: 100%;
-    background-color: #1a2051;
-    color:white;
+    background-color: #f6f7fb;
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
     font-weight: 300;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
 }
 
 * {
     box-sizing: border-box;
+}
+
+#container {
+    max-width:950px; 
+    min-height:200px; 
+    margin:auto;
+}
+
+#container > div:first-of-type {
+    padding:10px;
+}
+
+h3 {
+    font-size: 26px;
+    display: inline-block;
+}
+
+.new {
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 14px;
+    margin-left: 10px;
+}
+
+.monitoring {
+    background-color: #c33a17;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+}
+
+
+.investigating {
+    border-radius: 6px;
+    background-color: #d41245;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 14px;
+    margin-left: 10px;
+}
+
+button {
+    background-color: #f6f7fb;
+    border:1px solid #d6def3;
+    padding: 8px 20px;
+    color: #4d556f;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.spacer {
+    width: auto; margin-left: 100px; border-left: 3px solid #91a1c7; height: 20px;
+}
+
+.box {
+    width: 100%; 
+    background-color: white; 
+    min-height: 200px; 
+    border-radius: 4px; 
+    -webkit-box-shadow: 0px 11px 15px 21px rgba(175,175,175,0.13); 
+    box-shadow: 0px 11px 15px 21px rgba(175,175,175,0.13);
+    padding: 40px;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 600;
+}
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.titleLabel {
+    background-color: #296d49;
+    font-size: 18px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+}
+
+.incident {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 26px;
+    padding:30px 0px;
+    max-width: 70%;
 }
