@@ -39,6 +39,10 @@ h3 {
     margin-left: 10px;
 }
 
+.new:hover {
+    background-color: #296d49;
+}
+
 .resolved {
     background-color: #296d49;
     font-size: 16px;
@@ -83,7 +87,9 @@ button {
 }
 
 button:hover {
-    border:1px solid white;
+    background-color: #4d556f;
+    border:1px solid #4d556f;
+    color: white;
 }
 
 .spacer {
@@ -124,4 +130,6 @@ button:hover {
 
 .more {
     display: none;
+    margin-top:20px;
+    color: #808597;
 }
