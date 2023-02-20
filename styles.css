@@ -31,6 +31,7 @@ h3 {
 .new {
     border-radius: 6px;
     background-color: black;
+    cursor: pointer;
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -38,25 +39,36 @@ h3 {
     margin-left: 10px;
 }
 
-.monitoring {
-    background-color: #c33a17;
+.resolved {
+    background-color: #296d49;
     font-size: 16px;
     border-radius: 6px;
     color:white;
     padding: 3px 12px 3px;
     font-weight: 500;
+    display: inline-block;
 }
 
+.monitoring {
+    background-color: #d41245;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
+    font-weight: 500;
+    display: inline-block;
+}
 
 .investigating {
-    border-radius: 6px;
     background-color: #d41245;
-    color: white;
-    font-size: 22px;
+    font-size: 16px;
+    border-radius: 6px;
+    color:white;
+    padding: 3px 12px 3px;
     font-weight: 500;
-    padding: 5px 14px;
-    margin-left: 10px;
+    display: inline-block;
 }
+
 
 button {
     background-color: #f6f7fb;
@@ -66,7 +78,12 @@ button {
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+button:hover {
+    border:1px solid white;
 }
 
 .spacer {
@@ -92,16 +109,9 @@ button {
     font-weight: 600;
     margin-top: 10px;
     display: inline-block;
+    max-width: 74%;
 }
 
-.titleLabel {
-    background-color: #296d49;
-    font-size: 18px;
-    border-radius: 6px;
-    color:white;
-    padding: 3px 12px 3px;
-    font-weight: 500;
-}
 
 .incident {
     font-size: 16px;
@@ -110,4 +120,8 @@ button {
     line-height: 26px;
     padding:30px 0px;
     max-width: 70%;
+}
+
+.more {
+    display: none;
 }
