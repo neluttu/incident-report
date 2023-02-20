@@ -20,9 +20,9 @@
                 <br>
                 <span class="title">Users are unable to rearrange screens <span class="resolved">Resolved</span></span>
                 <br>
-                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team</span>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span> 
                 <br>
-                <button>Full report</button>
+                <button data-text="Show less">Full report</button>
             </div>
             <div class="spacer"></div>
 
@@ -31,9 +31,9 @@
                 <br>
                 <span class="title">Cloud V7 users may be experiencing some slowness or issues loading projects <span class="monitoring">Monitoring</span></span> 
                 <br>
-                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.</span>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span>
                 <br>
-                <button>Full report</button>
+                <button data-text="Show less">Full report</button>
             </div>
             <div class="spacer"></div>
 
@@ -42,11 +42,19 @@
                 <br>
                 <span class="title">Some screens are not loading or loading intermittently for some V7 users <span class="investigating">Investigating</span></span>
                 <br>
-                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.</span>
+                <span class="incident">Our engineers have resolved the issue where users were unable to rearrange screens in V6 prototypes. Please reach out to our support team.<span class="more"><br><br>Be advised, this is not a drill. This si actually a live test. Do not take the red pill! Your screens will not rearrange if you take the red pill!</span></span>
                 <br>
-                <button>Full report</button>
+                <button data-text="Show less">Full report</button>
             </div>
         </div>
     </div>
+    <script>
+        $('button').click(function () {
+            var oldText = $(this).text();
+            var newText = $(this).data('text');
+            $(this).text(newText).data('text',oldText);
+            $(this).parent().find('.more').toggle();
+        });
+    </script>
 </body>
 </html>
